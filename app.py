@@ -84,7 +84,7 @@ for k, v in _STATE_DEFAULTS.items():
 with st.sidebar:
     st.header("Transaction Selector")
     txn_ids      = list_transaction_ids()
-    selected_txn = st.selectbox("Select Transaction ID", options=txn_ids)
+    selected_txn = st.selectbox("Select Transaction ID", options=txn_ids, key="txn_selector")
 
     if selected_txn != st.session_state.selected_txn:
         _reset(selected_txn)
@@ -232,8 +232,9 @@ elif st.session_state.current_step >= 1:
         expanded=False,
     ):
         for sec_num, text in refs["sections"].items():
-            with st.expander(f"Section {sec_num}", expanded=False):
-                st.markdown(f"```\n{text}\n```")
+            st.markdown(f"**Section {sec_num}**")
+            st.markdown(f"```\n{text}\n```")
+            st.divider()
 
     with st.expander("Full Context Object (JSON)", expanded=False):
         st.json(ctx)

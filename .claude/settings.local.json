@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python _verify_engine.py)",
+      "Bash(truncate:*)",
+      "Bash(cd:*)",
+      "Bash(python test.py)",
+      "Bash(iconv -f UTF-8 -t UTF-8//IGNORE)",
+      "Bash(set PYTHONIOENCODING=utf-8)",
+      "Bash(python -m venv venv)",
+      "Bash(venv/Scripts/pip install:*)"
+    ]
+  }
+}

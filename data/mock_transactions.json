@@ -1,0 +1,121 @@
+[
+  {
+    "transaction_id": "TXN-IN-001",
+    "timestamp": "2026-04-01T09:00:00+05:30",
+    "initiating_company": {
+      "name": "Bharat Infrastructure Ltd",
+      "cin": "L45200MH2005PLC153998",
+      "din_of_authorising_director": "DIN-00234781",
+      "registered_state": "Maharashtra",
+      "entity_type": "listed_public_company",
+      "annual_turnover_inr": 85000000000
+    },
+    "counterparty": {
+      "name": "Bharat Realty Pvt Ltd",
+      "cin": "U70100MH2010PTC212345",
+      "registered_state": "Maharashtra",
+      "entity_type": "private_limited",
+      "relationship_to_initiator": "subsidiary"
+    },
+    "transaction_type": "sale_of_property",
+    "amount_inr": 120000000,
+    "purpose": "Transfer of commercial plot for subsidiary office construction",
+    "section_188_category": "sale_purchase_of_property",
+    "risk_flags": ["related_party", "high_value_property"]
+  },
+  {
+    "transaction_id": "TXN-IN-002",
+    "timestamp": "2026-04-01T10:30:00+05:30",
+    "initiating_company": {
+      "name": "Sunrise Pharma Industries Ltd",
+      "cin": "L24230GJ1998PLC034512",
+      "din_of_authorising_director": "DIN-00847231",
+      "registered_state": "Gujarat",
+      "entity_type": "listed_public_company",
+      "annual_turnover_inr": 12000000000
+    },
+    "counterparty": {
+      "name": "Dr. Ramesh Kapoor",
+      "din": "DIN-00847231",
+      "relationship_to_initiator": "managing_director",
+      "entity_type": "individual_director"
+    },
+    "transaction_type": "loan_to_director",
+    "amount_inr": 5000000,
+    "purpose": "Personal loan advanced to Managing Director",
+    "section_185_applicable": true,
+    "risk_flags": ["director_loan", "section_185_violation"]
+  },
+  {
+    "transaction_id": "TXN-IN-003",
+    "timestamp": "2026-04-01T11:15:00+05:30",
+    "initiating_company": {
+      "name": "Deccan Textiles Pvt Ltd",
+      "cin": "U17100TN2012PTC087654",
+      "din_of_authorising_director": "DIN-00991134",
+      "registered_state": "Tamil Nadu",
+      "entity_type": "private_limited",
+      "annual_turnover_inr": 2500000000
+    },
+    "counterparty": {
+      "name": "Kaveri Exports Ltd",
+      "cin": "U51900TN2003PLC072318",
+      "registered_state": "Tamil Nadu",
+      "entity_type": "private_limited",
+      "relationship_to_initiator": "third_party_vendor"
+    },
+    "transaction_type": "purchase_of_goods",
+    "amount_inr": 20000000,
+    "purpose": "Bulk purchase of raw cotton from registered vendor",
+    "section_188_category": "sale_purchase_of_goods",
+    "risk_flags": ["counterparty_watchlist"]
+  },
+  {
+    "transaction_id": "TXN-IN-004",
+    "timestamp": "2026-04-01T12:00:00+05:30",
+    "initiating_company": {
+      "name": "NovaTech Solutions Pvt Ltd",
+      "cin": "U72200KA2018PTC112233",
+      "din_of_authorising_director": "DIN-00556677",
+      "registered_state": "Karnataka",
+      "entity_type": "private_limited",
+      "annual_turnover_inr": 500000000
+    },
+    "counterparty": {
+      "name": "CloudBase Services LLP",
+      "cin": "AAA-1234",
+      "registered_state": "Karnataka",
+      "entity_type": "llp",
+      "relationship_to_initiator": "third_party_vendor"
+    },
+    "transaction_type": "availing_services",
+    "amount_inr": 2500000,
+    "purpose": "Annual cloud hosting and IT support services",
+    "section_188_category": "availing_rendering_services",
+    "risk_flags": []
+  },
+  {
+    "transaction_id": "TXN-IN-005",
+    "timestamp": "2026-04-01T13:30:00+05:30",
+    "initiating_company": {
+      "name": "Himalayan Steel Works Ltd",
+      "cin": "L27100WB1995PLC073412",
+      "din_of_authorising_director": "DIN-01122334",
+      "registered_state": "West Bengal",
+      "entity_type": "listed_public_company",
+      "annual_turnover_inr": 35000000000
+    },
+    "counterparty": {
+      "name": "Eastern Alloys Trading Co. Pvt Ltd",
+      "cin": "U27310WB2001PTC083721",
+      "registered_state": "West Bengal",
+      "entity_type": "private_limited",
+      "relationship_to_initiator": "associate_company"
+    },
+    "transaction_type": "availing_services",
+    "amount_inr": 8000000,
+    "purpose": "Logistics and warehousing services from associate company",
+    "section_188_category": "availing_rendering_services",
+    "risk_flags": ["related_party", "disqualified_director_linked"]
+  }
+]
